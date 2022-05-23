@@ -1,21 +1,12 @@
-# AirObject: A Temporally Evolving Graph Embedding for Object Identification
-
-[![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-yellow.svg)](./LICENSE)
-[![stars](https://img.shields.io/github/stars/Nik-V9/AirObject?style=social)](https://github.com/Nik-V9/AirObject/stargazers)
-[![Air Series](https://img.shields.io/badge/collection-Air%20Series-b31b1b)](https://chenwang.site/airseries/)
-[![arXiv](https://img.shields.io/badge/arXiv-2111.15150-b31b1b.svg)](https://arxiv.org/abs/2111.15150)
-[![IEEE/CVF CVPR 2022](https://img.shields.io/badge/-IEEE/CVF%20CVPR%202022-blue)](https://cvpr2022.thecvf.com/)
+# Adapting Airobject to get global descriptors for sketches
 
 ## Introduction
 
-AirObject is a CVPR 2022 research project. In this work, we present AirObject, a temporal class-agnostic object encoding method to obtain global keypoint graph-based embeddings of objects. Specifically, the global 3D object embeddings are generated using a temporal convolutional network across structural information of multiple frames obtained from a graph attention-based encoding method. This repo contains the official code to run AirObject and other Baselines presented in the paper for Video Object Identification. We also provide code for training and global object tracking.
+AirObject is a CVPR 2022 research project. AirObject is a temporal class-agnostic object encoding method to obtain global keypoint graph-based embeddings of objects. Specifically, the global 3D object embeddings are generated using a temporal convolutional network across structural information of multiple frames obtained from a graph attention-based encoding method.
 
-<p align="center">
-  <img src="assets/overview.jpg" width="500">
-    <br/><em>Matching Temporally Evolving Representations using AirObject</em>
-</p>
+Leveraging Delaunay triangulation and Graph attention to generate global object descriptors for sketch inputs.
 
-For more details, please see:
+## For more details on the original AirObject, please see:
 
 * Full paper PDF: [AirObject: A Temporally Evolving Graph Embedding for Object Identification](https://arxiv.org/abs/2111.15150).
 
@@ -155,8 +146,6 @@ python './train/train_airobj.py' -c './config/train_airobj.yaml' -g 1
 
 ## BibTeX Citation
 
-If any ideas from the paper or code from this repo are used, please consider citing:
-
 ```txt
 @inproceedings{keetha2022airobject,
   title     = {AirObject: A Temporally Evolving Graph Embedding for Object Identification},
@@ -166,14 +155,6 @@ If any ideas from the paper or code from this repo are used, please consider cit
   url       = {https://arxiv.org/abs/2111.15150}}
 ```
 
-The code is licensed under the [BSD 3-Clause License](./LICENSE).
-
 ## Acknowledgements
 
-The authors acknowledge the support from the AirLab and Robotics Institute, Carnegie Mellon University. This work was supported by ONR Grant N0014-19-1-2266 and ARL DCIST CRA award W911NF-17-2-0181.
-
-We would also like to acknowledge the [AirCode](https://github.com/wang-chen/AirCode) and [YT-VOS API](https://github.com/achalddave/ytvosapi) code repos.
-
-## Related works
-
-Please check out the [Air Series Articles](https://chenwang.site/airseries/).
+We would like to acknowledge [AirObject: A Temporally Evolving Graph Embedding for Object Identification](https://arxiv.org/abs/2111.15150) for both the codebase and the central ideas
